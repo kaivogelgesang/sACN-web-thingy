@@ -66,3 +66,4 @@ if __name__ == '__main__':
     app = aiohttp.web.Application()
     app.add_routes(routes)
     aiohttp.web.run_app(app)
+    dmx.stop()
