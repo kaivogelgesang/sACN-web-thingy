@@ -22,6 +22,7 @@ ws.onmessage = (msg) => {
     const data = JSON.parse(msg.data);
     for (const [channel, value] of Object.entries(data)) {
         sliders[channel].value = value;
+        sliders[channel].MaterialSlider.change(value);
     }
 };
 
